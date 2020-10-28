@@ -1,5 +1,11 @@
 #include "holberton.h"
-
+/**
+ * structures - matches format specificators with the propper functions.
+ * @format: _printf string with specificatos.
+ * @i: iterator which comes from main function.
+ * @arg: list of arguments entered to _printf.
+ * Return: number of bytes used to print in stdout.
+ */
 int structures(const char *format, int *i, va_list arg)
 {
 	int counter = 0, j = 0;
@@ -20,7 +26,8 @@ int structures(const char *format, int *i, va_list arg)
 			cunter += options[j].function(arg);
 			*i += 1;
 		}
-		else (format[*i + 1] == '%')
+	else
+		(format[*i + 1] == '%')
 		{
 			_putchar(format[*i + 1]);
 			counter++;
