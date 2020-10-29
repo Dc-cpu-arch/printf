@@ -19,7 +19,14 @@ int _printf(const char *format, ...)
 	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] == '%')
-		throwput += structures(format, &i, arg);
+		{
+			throwput += structures(format, &i, arg);
+
+			if (format[i + 1] == '%')
+			{
+				_putchar(format[i + 1]);
+				throwput++;
+			}
 		else
 		{
 			_putchar(format[i]);
