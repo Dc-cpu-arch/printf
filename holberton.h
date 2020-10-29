@@ -13,7 +13,7 @@ int print_octal(va_list o);
 int print_HEX(va_list X);
 int print_hex(va_list x);
 int _putchar(char c);
-int structures(const char *format, int *i, va_list arg);
+int structures(const char *format, unsigned int *i, va_list arg);
 int print_string(va_list a);
 int print_char(va_list c);
 /**
