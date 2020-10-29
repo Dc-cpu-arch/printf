@@ -7,13 +7,6 @@
  */
 int _printf(const char *format, ...)
 {
-	options_t options[] = {
-		{"c", print_char},
-		{"b", return_binary},
-		{"s", print_string},
-		{NULL, NULL}
-	};
-
 	va_list arg;
 
 	unsigned int i = 0, throwput = 0;
