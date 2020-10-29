@@ -27,6 +27,7 @@ int _printf(const char *format, ...)
 				_putchar(format[i + 1]);
 				throwput++;
 			}
+		}
 		else
 		{
 			_putchar(format[i]);
