@@ -97,7 +97,7 @@ int print_octal(va_list o)
 }
 
 /**
- * print_HEX - converts an integer into hexadecimal in lowercase, and prints it.
+ * print_HEX - converts an integer into hexadecimal in lowercase and prints it
  * @X: the given number to convert.
  * Return: number of bytes required to print in stdout.
  */
@@ -133,7 +133,7 @@ int print_HEX(va_list X)
 }
 
 /**
- * print_hex - converts an integer into hexadecimal in lowercase, and prints it.
+ * print_hex - converts an integer into hexadecimal in lowercase and prints it
  * @x: the given number to convert.
  * Return: number of bytes required to print in stdout.
  */
@@ -146,7 +146,7 @@ int print_hex(va_list x)
 	number = va_arg(x, unsigned int);
 
 	if (number == 0)
-	{	
+	{
 		write(1, "0", 1);
 		count++;
 	}
@@ -156,7 +156,7 @@ int print_hex(va_list x)
 			hex[i] = 87 + number % 16;
 		else
 			hex[i] = 48 + number % 16;
-	
+
 		number /= 16;
 		i++;
 	}
