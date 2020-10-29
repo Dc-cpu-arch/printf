@@ -24,16 +24,6 @@ int structures(const char *format, unsigned int *i, va_list arg)
 		if (format[*i + 1] == options[j].op[0])
 		{
 			counter += options[j].function(arg);
-<<<<<<< HEAD
-=======
-			*i += 1;
-		}
-		else
-			(format[*i + 1] == '%');
-		{
-			_putchar(format[*i + 1]);
-			counter++;
->>>>>>> dce4be4f291a32f78ef204e6003191202fe7b257
 			*i += 1;
 			break;
 		}
